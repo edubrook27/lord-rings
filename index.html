@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map-rings</title>
+</head>
+<body>
+    <style>
+        body {
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+        }
+
+        .fundo {
+            position: absolute;
+            width: 1370px;
+        }
+
+        .logo {
+        position: absolute;
+        width: 400px;
+        margin-top: 100px;
+        margin-left: 100px;
+
+        }
+
+        .viajar {
+        position: absolute;
+        margin-top: 220px;
+        margin-left: 100px;
+        }
+
+        .frodo {
+            position: absolute;
+            margin-left: 64em;
+            margin-top: 38px;
+        }
+
+        #frame-map {
+            height: 300px;
+            margin-bottom: 50px;
+            margin-left: 50px;
+            background-color: aliceblue;
+            border-radius: 10px;
+
+        }
+
+    </style>
+    <img class="fundo" src="fundos/a93BGVt.jpg" alt="rings">
+
+    
+
+    <div class="viajar">
+        <section>
+
+            <img class="mapaR" src="IMAGENS/mapa-red.png" usemap="#meumapa">
+            <map name="meumapa">
+
+                <area shape="circle" coords="656,429,46" href="artedomapa.html#mordor" target="janela">
+                <area shape="circle" coords="403,333,44" href="artedomapa.html#rohan" target="janela">
+                <area shape="circle" coords="345,408,46" href="artedomapa.html#gondor" target="janela">
+                <area shape="circle" coords="477,182,45" href="artedomapa.html#rhovanion" target="janela">
+                <area shape="circle" coords="167,170,46" href="artedomapa.html#eriador" target="janela">
+                <area shape="circle" coords="143,40,45" href="artedomapa.html#arnor"target="janela">
+                <area shape="circle" coords="745,160,46" href="artedomapa.html#rhun" target="janela">
+                
+            </map>
+
+            <iframe src="artedomapa.html" name="janela" id="frame-map"></iframe>
+        </section>
+    </div>
+
+    <img class="logo" src="IMAGENS/The_Lord_of_the_Rings_logo.png" alt="logo">
+    <img class="frodo" src="IMAGENS/froodo.png" alt="frodo">
+</body>
+</html>
